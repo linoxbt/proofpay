@@ -20,10 +20,7 @@ export const rialoDevnet = defineChain({
     decimals: 18,
   },
   rpcUrls: {
-    default: { http: [RIALO_RPC_URL] },
-  },
-  blockExplorers: {
-    default: { name: "Rialo Explorer", url: RIALO_EXPLORER_URL },
+    default: { http: [""] }, // deliberately empty to prevent network configs from being sent to the wallet
   },
   testnet: true,
 });
